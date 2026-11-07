@@ -1,0 +1,14 @@
+Empfohlene CV-Fassung – Deutsch
+
+**Aufbau, Konfiguration und Erprobung eines F450-Quadcopters (Drohne)**
+- Montage der F450-Rahmenstruktur sowie Integration und Verdrahtung der Leistungs- und Signalelektronik.
+- Integration eines Pixhawk-6C-Flight-Controllers mit ArduCopter und Konfiguration der Quad-X-Rahmengeometrie über Mission Planner.
+- Einsatz von Mission Planner und Betaflight im Projektverlauf; die dokumentierte Pixhawk-6C-Konfiguration erfolgte mit ArduCopter über Mission Planner.
+- Integration von A2212-BLDC-Motoren und 30-A-OPTO-ESCs gemäß den verwendeten Hardware-Unterlagen.
+- Inbetriebnahme und Durchführung praktischer Testflüge sowie systematische Fehlersuche an Stromversorgung, Signalverbindungen, Lötstellen und mechanischen Vibrationen.
+
+Hinweis zur Genauigkeit:
+- Die Durchführung von Testflügen und die Verwendung von Betaflight und Mission Planner wurden vom Projektverantwortlichen bestätigt.
+- Die bereitgestellten Dateien zeigen konkret Pixhawk 6C, ArduCopter 4.5.7 und Mission Planner / Quad-X.
+- Keine konkreten Flugzeiten, Reichweiten, Schubwerte oder erfolgreichen Failsafe-/Leistungstests nennen, solange keine Logs oder Messprotokolle vorliegen.
+- Falls Betaflight nur mit einer anderen Flight-Controller-Hardware oder in einer separaten Projektphase verwendet wurde, sollte diese Zuordnung im CV präzisiert werden.
