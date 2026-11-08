@@ -1,0 +1,36 @@
+
+name: F450 Quadcopter Documentation CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  documentation-check:
+    name: Check Project Documentation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check README
+        run: |
+          test -s README.md
+          echo "README.md exists and is not empty."
+
+      - name: Check documentation folder
+        run: |
+          test -d docs
+          find docs -type f -print -quit | grep -q .
+          echo "Documentation folder exists and contains files."
+
+      - name: List project documentation
+        run: |
+          find docs -type f
